@@ -24,10 +24,21 @@ scene.position = {x: 250, y: 250};
 Теперь нужно создать объект и указать его координаты:
 ````js
 var rect = BOUGH.createObject();
-rect.pos = {x: 100, y: 100, z: 0};
+rect.position = {x: 100, y: 100, z: 0};
 ````
 
 Теперь добавим его на сцену:
 ````js
 scene.add(rect);
+````
+
+Ну и в конце надо вызвать метод scene.update() внутри функции перерисовки:
+````js
+function loop() {
+	ctx.clearRect(0, 0, display.width, display.height);
+	scene.update();
+	
+	requestAnimationFrame(loop);
+}
+loop();
 ````
