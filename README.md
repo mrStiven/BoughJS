@@ -25,10 +25,14 @@ var scene = new BOUGH.Scene();
 scene.position = {x: 250, y: 250};
 ````
 
-Теперь нужно создать объект и указать его координаты:
+Теперь нужно создать объект, указать его координаты и добавить метод draw:
 ````js
 var rect = BOUGH.createObject();
 rect.position = {x: 100, y: 100, z: 0};
+rect.draw = function() {
+	ctx.fillStyle = this.color;
+	ctx.fillRect(this.vx, this.vy, 5, 5);
+}
 ````
 
 Далее добавим его на сцену:
@@ -40,14 +44,11 @@ scene.add(rect);
 ````js
 function loop() {
 	ctx.clearRect(0, 0, display.width, display.height);
-	scene.update();
+	scene.rotate(0.5);
 	
+	scene.update();
 	requestAnimationFrame(loop);
 }
 loop();
-````
-Также можно покрутить сцену:
-````js
-scene.rotate(0.5);
 ````
 
