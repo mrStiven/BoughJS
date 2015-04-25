@@ -4,14 +4,20 @@
 
 Для начала просто подключите bough-min.js:
 ````js
-<script src = 'bough-min.js'></script>
+<html>
+	<canvas id = 'cnv'></canvas>
+	<script src = 'bough-min.js'></script>
+	<script>
+		var ctx = cnv.getContext('2d');
+		var ctx = cnv.getContext('2d');
+		ctx.canvas.width = 500;
+		ctx.canvas.height = 500;
+		// exemple
+	</script>
+</html>
 ````
-Создайте сanvas и сцену, указав ее координаты:
+Создайте сцену, указав ее координаты:
 ````js
-
-var ctx = cnv.getContext('2d');
-ctx.canvas.width = 500;
-ctx.canvas.height = 500;
 
 var scene = new BOUGH.Scene();
 scene.position = {x: 250, y: 250};
