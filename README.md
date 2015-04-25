@@ -12,7 +12,9 @@
 		var ctx = cnv.getContext('2d');
 		ctx.canvas.width = 500;
 		ctx.canvas.height = 500;
+		
 		// exemple
+		
 	</script>
 </html>
 ````
