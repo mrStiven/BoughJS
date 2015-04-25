@@ -27,7 +27,7 @@ var rect = BOUGH.createObject();
 rect.position = {x: 100, y: 100, z: 0};
 ````
 
-Теперь добавим его на сцену:
+Далее добавим его на сцену:
 ````js
 scene.add(rect);
 ````
@@ -42,3 +42,8 @@ function loop() {
 }
 loop();
 ````
+Также можно покрутить сцену:
+````js
+scene.rotate(0.5);
+````
+
