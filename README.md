@@ -27,16 +27,6 @@ var rect = BOUGH.createObject();
 rect.pos = {x: 100, y: 100, z: 0};
 ````
 
-Данный объект мы можем расширить собственными свойставми и методами:
-````js
-rect.pos = {x: 100, y: 100, z: 0};
-rect.color = '#f00';
-rect.draw = function() {
-	ctx.fillStyle = this.color;
-	ctx.fillRect(this.vx, this.vy, 5, 5);
-}
-````
-
 Теперь добавим его на сцену:
 ````js
 scene.add(rect);
