@@ -8,14 +8,10 @@
 ````
 Создайте сanvas и сцену, указав ее координаты:
 ````js
-var display = {
-	width: window.innerWidth,
-	height: window.innerHeight,
-};
 
 var ctx = cnv.getContext('2d');
-ctx.canvas.width = display.width;
-ctx.canvas.height = display.height;
+ctx.canvas.width = 500;
+ctx.canvas.height = 500;
 
 var scene = new BOUGH.Scene();
 scene.position = {x: 250, y: 250};
