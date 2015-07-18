@@ -1,5 +1,7 @@
 # BoughJS
 
+www.youtube.com/channel/UCqpa1Rs6HICTpUut97YCdLg
+
 ## Как начать
 
 Для начала просто подключите bough-min.js:
@@ -8,7 +10,6 @@
 	<canvas id = 'cnv'></canvas>
 	<script src = 'bough-min.js'></script>
 	<script>
-		var ctx = cnv.getContext('2d');
 		var ctx = cnv.getContext('2d');
 		ctx.canvas.width = 500;
 		ctx.canvas.height = 500;
